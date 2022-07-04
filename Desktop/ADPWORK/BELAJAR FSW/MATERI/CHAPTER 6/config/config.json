@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "binar_user2",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port":"2508"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "putri",
+    "password": 123456,
+    "database": "binar_user",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
