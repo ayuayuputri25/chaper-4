@@ -1,3 +1,4 @@
+//makasih mas Riandy sampai last minute mau membimbing bingung bingung
 const { response } = require('express');
 const express = require('express');
 const app = express()
@@ -97,17 +98,18 @@ app.post('/user/:id/update', (req, res) => {
         password
     }, {where: {id}})
     .then(response => {
+
+       // return res.send(response)
         user_game_biodata.update({
             first_name, 
             last_name, 
             birthplace
-        }, {where: {id:id_user}})
+        }, {where: {id_user:id}})
         .then(response =>{
             res.redirect('/dashboard')
         })
-        .catch(error=> res.send(error))
     })
-    .catch(error=> res.send(error))
+   
 });
 
 
